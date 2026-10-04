@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapish-Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+
+            position: fixed;
+            top: 0px;
+            z-index: 100;
+
+
+        }
+
+        .right ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right ul li {
+            list-style: none;
+            margin: 0 15px;
+
+
+        }
+
+        .right ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .right ul li a:hover {
+            color: aqua;
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            font-weight: bolder;
+            text-indent: 145px;
+
+        }
+
+        .color1 {
+            color: blueviolet;
+            font-style: italic;
+        }
+
+        .color {
+            color: blueviolet;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 150px 0;
+
+        }
+
+        .firstsection div {
+            width: 35%;
+
+        }
+
+        .rightsection img {
+            margin: 50px 0px;
+            object-fit: cover;
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            filter: brightness(100%);
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+        }
+
+        /* about section */
+        .secondsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .secondsection>div {
+            width: 40%;
+            margin: 70px 0px;
+
+        }
+
+        .left1section div h1 {
+            /* margin: 100px 0px 0px; */
+            color: rgb(16, 161, 161);
+            font-size: 3.5rem;
+
+        }
+
+        .left1section div span {
+            color: blueviolet;
+            font-style: oblique;
+        }
+
+        .left1section h3 {
+            margin: 50px 0px 0px;
+        }
+
+        .left1section p {
+            margin: 25px 0px;
+        }
+
+        .right1section img {
+            width: 500px;
+            height: 500px;
+            border-radius: 20%;
+            object-fit: contain;
+
+
+        }
+
+        /* Education */
+        .education h2 {
+            margin: 20px 0px;
+            color: blueviolet;
+        }
+
+        .education table td {
+            color: aqua;
+        }
+
+        .education table th {
+            color: aquamarine;
+        }
+
+        .rightsection img {
+
+            cursor: pointer;
+        }
+
+        .rightsection :hover {
+            transform: translateY(1px);
+            box-shadow: 0 10px 30px rgba(0, 255, 255, 0.25);
+            border: 1px solid cyan;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <Nav>
+            <div class="left">&lt;Kapish`s Portfolio<span class="color">/&gt;</span></div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+
+                </ul>
+            </div>
+
+        </Nav>
+    </header>
+    <main>
+        <section class="firstsection" id="home">
+            <div class="leftsection">Hi, My Name is<span class="color1"> Kapish Upadhyay</span> and I am a<span
+                    class="animation"> passionate Web Developer</span></div>
+            <div class="rightsection"><img src="kapish2.jpeg" alt="#"></div>
+        </section>
+        <div id="about">
+            <section class="secondsection">
+                <div class="left1section">
+                    <div>
+                        <span>&lt; About /&gt;</span>
+                        <h1>Who I Am</h1>
+                    </div>
+                    <h3>I`m an aspiring software developer focused on building a strong foundation in programming,
+                        problem
+                        solving and modern web development.</h3>
+                    <p>Right now, I`m working on Java, Data Structures & Algorithms, HTML, CSS, JavaScript and
+                        Git/GitHub.
+                        My goal is to build real projects, contribute to open source and gain internship experience.
+                    <div class="education">
+                        <h2>Education</h2>
+                        <table border="1">
+                            <th>Institution</th>
+                            <th>Course</th>
+                            <th>Status / Year</th>
+                            <tr>
+                                <td>Scaler School Of Technology</td>
+                                <td>Cs & AI</td>
+                                <td>2030</td>
+                            </tr>
+                            <tr>
+                                <td>IIT Madras</td>
+                                <td>BS in Data & Application</td>
+                                <td>2030</td>
+
+
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+                <div class="right1section"><img src="about1.jpeg" alt="#"></div>
+
+            </section>
+
+        </div>
+        <div>
+            <div class="margin">
+                <span class="skill">&lt; Skills /&gt;</span>
+                <h1 class="mytool">My Toolkit</h1>
+            </div>
+            <section class="thirdsection" id="skills">
+
+                <div class="box">
+                    <div>01</div>
+                    <h2>Java</h2>
+                    <p>Core java ,OOP & Array fundamentals </p>
+                </div>
+                <div class=" box">
+                    <div>02</div>
+                    <h2>DSA</h2>
+                    <p>Problem solving and Algorithms</p>
+                </div>
+                <div class=" box">
+                    <div>03</div>
+                    <h2>HTML & CSS</h2>
+                    <P>Creating Portfolio Website</P>
+                </div>
+                <div class="box">
+                    <div>04</div>
+                    <h2>JavaScript</h2>
+                    <p>Interactive Web experience</p>
+                </div>
+                <div class=" box">
+                    <div>05</div>
+                    <h2>Git & GitHub</h2>
+                    <p>Version control and collaboration</p>
+                </div>
+                <div class=" box">
+                    <div>06</div>
+                    <h2>Python</h2>
+                    <p>Beginner Projects And scripting</p>
+                </div>
+
+            </section>
+        </div>
+        <div id="projects">
+            <div class="margin2">
+                <span class="pro">&lt; Projects /&gt;</span>
+                <h2 class="built">Things I`ve Built</h2>
+            </div>
+            <section class="fourthsection">
+                <div class="box1">
+                    <div>01</div>
+                    <h2>SURVEY FORM</h2>
+                    <p>A survey form asking about name of Student and their favourite Course</p>
+                    <a target="_blank" href="Survey form/index.html">View project</a>
+
+                </div>
+                <div class="box1">
+                    <div>02</div>
+                    <h2>Portfolio Website</h2>
+                    <p>A Very impressive Website using HTML & CSS</p>
+                    <a href="#">View project</a>
+                </div>
+
+
+
+            </section>
+        </div>
+        <section class="fifthsection" id="contact">
+            <div class="left2">
+                <div>&lt; Contact /&gt;</div>
+                <h2>Let`s Contact</h2>
+                <h3>Have a project, internship opportunity, or just want to say hello? Feel Free to Connect.... </h3>
+                <p class="github">Email Id : <a target="_blank"
+                        href="https://mail.google.com/mail/u/1/#inbox?compose=lqrslrmZsStNWnfbPFtdpbZHRvthptGQBfdXXlfgHLgsRTWSCZqkvKrwNJKGRsKdtLDxVxbMmsSzCHxxK">kapishupadhyay195@gmail.com</a>
+                </p>
+                <p class="github">GitHub Link : <a target="_blank"
+                        href="https://github.com/kapishupadhyay-tech">https://github.com/kapishupadhyay-tech</a></p>
+                <p class="github">Linkdin : <a target="_blank"
+                        href="https://www.linkedin.com/in/kapish-upadhyay-752756426?utm_source=share_via&utm_content=profile&utm_medium=member_android">https://www.linkedin.com/in/kapish-upadhyay
+                    </a>
+                </p>
+            </div>
+            <div class="rigth2">
+                <form>
+                    <input class="name" type="text" placeholder="Your name">
+                    <input class="email" type="email" placeholder="Your email">
+                    <textarea class="text" width="500px" height="600px" placeholder="Your Message"></textarea>
+                    <button class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer class="footer">
+        <div class="left3">&copy Kapish. Built with HTML & CSS</div>
+        <div class="right3"><a href="#">Back to top</a></div>
+    </footer>
+
+
+
+</body>
+
+</html>

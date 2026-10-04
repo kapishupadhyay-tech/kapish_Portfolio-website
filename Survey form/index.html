@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .survey {
+            width: 80%;
+            border: 1px solid gray;
+            border-radius: 10px;
+            /* background-color: gray; */
+            height: 140vh;
+            margin: 60px 0px 0px 150px;
+        }
+
+        .student {
+            text-align: center;
+            margin: 20px;
+            font-style: italic;
+            font-size: 1.5rem; 
+
+
+        }
+
+        .p {
+            text-align: center;
+        }
+
+        div .form {
+            margin: 60px 30px 0px 150px;
+            border: 1px solid gray;
+            
+            width: 75%;
+            height: 100vh;
+            border-radius: 10px;
+        }
+
+        .form p {
+            margin: 30px;
+            font-size: 1.05rem;
+        }
+
+        .a {
+            margin: 20px;
+        }
+
+        #name {
+            margin: 20px;
+            height: 40px;
+            width: 300px;
+        }
+
+        #email {
+            margin: 20px;
+            height: 40px;
+            width: 300px;
+        }
+
+        #radio1 {
+            margin: 20px 0px 0px 20px;
+        }
+
+        #a {
+            margin: 10px 0px 10px 20px;
+        }
+        .btn{
+            margin: 20px;
+            width: 150px;
+            height: 40px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="survey">
+        <h3 class="student">Student Survey Form</h3>
+        <p class="p">Help us improve your learning experience</p>
+        <div class="form">
+            <p>Personal Information</p>
+            <label class="a" for="name">Full Name</label><br>
+            <input id="name" type="text" name="u" placeholder="Enter Your Name"><br>
+            <label class="a" for="email">Email Address</label><br>
+            <input id="email" type="email" name="u" placeholder="Enter Your Email"><br>
+            <span style="margin: 20px;">How satisfied are you</span>
+            <div>
+                <input id="radio1" type="radio" name="username">
+                <label id="radio1" for="radio">very Bad</label>
+                <input id="radio1" id="radio" type="radio" name="username">
+                <label id="radio1" for="radio">Bad</label>
+                <input id="radio1" id="radio" type="radio" name="username">
+                <label id="radio1" for="radio">Good</label>
+                <input id="radio1" id="radio" type="radio" name="username">
+                <label id="radio1" for="radio">excellent</label><br><br>
+                <span style="margin:20px">What did You Enjoy ?</span>
+            </div>
+            <div>
+                <input id="a" type="checkbox" name="username">
+                <label for="a">Web Development</label>
+                <input id="a" type="checkbox" name="username">
+                <label for="a">JavaScript</label>
+            </div>
+            <input id="a" type="checkbox" name="username">
+            <label for="a">Java</label>
+            <input id="a" type="checkbox" name="username">
+            <label for="a">DSA</label>
+            <div>
+                <label style="margin:100px 20px" id="text">Additional Feedback</label><br>
+                <textarea style="margin: 5px 20px" id="text" rows="5" cols="40"
+                    placeholder="Tell us What you think..."></textarea><br>
+                <button class="btn">Submit Survey</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
